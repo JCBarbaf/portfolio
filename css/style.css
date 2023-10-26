@@ -181,7 +181,7 @@ nav a.selected:hover {
     display: none;
     overflow: hidden;
     /* background-color: red; */
-    width: 30rem;
+    width: 50rem;
     margin: 3% 0 2% auto;
     transition: max-height 0.3s ease-in;
 }
@@ -194,9 +194,12 @@ nav a.selected:hover {
 #burger-menu a {
     /* background-color: green; */
     display: block;
-    width: 90%;
+    width: 50%;
     font-size: 40px;
-    margin: 1% auto;
+    margin: 1% 2% 1% auto;
+}
+#burger-menu a:not(.selected):hover {
+    transform: scale(1.05);
 }
 
 

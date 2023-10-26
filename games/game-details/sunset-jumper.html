@@ -12,13 +12,26 @@
 	</head>
 	<body>
         <header>
-            <img src="../../img/logo.svg" alt="logotipo" title="logotipo" id="logo" onclick="goTo('../index.html')">
-            <nav>
+            <div class="cabecera">
+                <img src="../../img/logo.svg" alt="logotipo" title="logotipo" id="logo" onclick="goTo('../index.html')">
+                <nav>
+                    <a href="../../web/web.html">Web</a>
+                    <a href="../../games/games.html">Videojuegos</a>
+                    <a href="../../art/art.html">Arte digital</a>
+                </nav>
+                <a class="about-me" href="../../about-me/about-me.html">Sobre mí</a>
+                <svg id="burger-icon" onclick="burger()" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23 30H77.5" stroke="#2137AD" stroke-width="10" stroke-linecap="round"/>
+                    <path d="M23 53H77.5" stroke="#2137AD" stroke-width="10" stroke-linecap="round"/>
+                    <path d="M23 76H77.5" stroke="#2137AD" stroke-width="10" stroke-linecap="round"/>
+                </svg>                    
+            </div>
+            <nav id="burger-menu" class="close">
                 <a href="../../web/web.html">Web</a>
                 <a href="../../games/games.html">Videojuegos</a>
                 <a href="../../art/art.html">Arte digital</a>
+                <a href="../../about-me/about-me.html">Sobre mí</a>
             </nav>
-            <a class="about-me" href="../../about-me/about-me.html">Sobre mí</a>
         </header>
         <main>
             <a href="../games.html#sunset" class="arrowback">
@@ -68,6 +81,7 @@
                 </svg>
             </div>
         </footer>
+        <script src="../../js/script.js"></script>
         <script src="../../js/anims.js"></script>
 	</body>
 </html>
