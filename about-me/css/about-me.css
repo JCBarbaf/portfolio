@@ -1,0 +1,61 @@
+
+.my-info {
+    width: 80%;
+    background-color: var(--lighterblue);
+    border: 0.5em solid var(--blue2);
+    border-radius: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 2em auto;
+    padding: 2%;
+}
+.info {
+    /* background-color: red; */
+    width: 70%;
+    font-size: 1.3em;
+    text-align: justify;
+}
+.info span {
+    color: var(--blue2);
+    font-size: 1.4em;
+}
+.info h3 {
+    text-align: left;
+}
+.info h2 {
+    color: var(--blue3);
+    font-size: 2em;
+    text-align: left;
+}
+.info-logos {
+    /* background-color: red; */
+    margin-top: 2em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.info-logos a {
+    margin: 0 1%;
+}
+.info-logos a svg{
+    width: 5em;
+}
+.info-logos a svg path {
+    fill: var(--blue);
+}
+.info-logos a:hover svg path {
+    fill: var(--blue3)
+}
+img.author {
+    --tamano: 25rem;
+    width: var(--tamano);
+    height: var(--tamano);
+    object-fit: cover;
+    object-position: 0 0;
+    border: 0.5rem solid var(--blue2);
+    border-radius: 5rem;
+    margin-right: 1.2rem;
+}

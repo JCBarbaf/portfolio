@@ -1,0 +1,52 @@
+:root {
+    --escalado: 1.2
+}
+.galeria {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.galeria img {
+    background-color: var(--lighterblue);
+    --tamano: 500px;
+    width: var(--tamano);
+    height: var(--tamano);
+    object-fit: contain;
+    border: 0.5rem solid var(--blue2);
+    border-radius: 70px;
+    margin: 1%;
+    transition: all ease-in 0.05s;
+}
+.galeria img:hover {
+    box-shadow: 0px 20px 25px 10px rgba(0,0,0,0.5);
+    transition: all ease-in 0.2s;
+}
+.galeria img:nth-child(3n):hover {
+    transform: scale(var(--escalado)) rotate(-2deg);
+}
+.galeria img:nth-child(3n -1):hover {
+    transform: scale(var(--escalado));
+}
+.galeria img:nth-child(3n -2):hover {
+    transform: scale(var(--escalado)) rotate(2deg);
+}
+.buy-my-art {
+    /* background-color: red; */
+    width: 90%;
+    margin: 2% auto;
+    font-size: 2rem;
+    color: var(--lighterblue);
+}
+.buy-my-art a {
+    width: fit-content;
+    background-color: var(--blue2);
+    padding: 0.5rem 2rem;
+    border-radius: 50rem;
+    margin-left: 1rem;
+}
+.buy-my-art a:hover {
+    background-color: var(--blue3);
+    transform: scale(1.1);
+    transition: all ease 0.2s;
+}

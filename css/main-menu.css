@@ -1,0 +1,57 @@
+div.mainmenu {
+    height: 70vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+a.expand {
+    display: block;
+    width: 35rem;
+    min-width: 300px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+a.expand:hover {
+    transform: none;
+}
+a.expand p {
+    width: 100%;
+    background-color: var(--blue);
+    color: var(--lightblue);
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    border-radius: 1rem;
+    border: 0.3rem solid var(--blue2);
+    transition: border-radius ease var(--animtime);
+    /* box-shadow: 0.1rem 0.1rem 3rem 0 rgba(0,0,0,0.5); */
+}
+a.expand:hover p {
+    border-radius: 1rem 1rem 0.5rem 0.5rem;
+    /* border-radius: 0; */
+    transition: border-radius ease var(--animtime);
+}
+a.expand img {
+    object-fit: cover;
+    background-color :var(--lightblue);
+    display: block;
+    width: 90%;
+    max-height: 0;
+    border-radius: 0 0 2rem 2rem;
+    border: 0.5rem solid var(--darkblue);
+    border-top: none;
+    transition-property: max-height;
+    transition: ease var(--animtime);
+}
+a.expand:hover img {
+    transition-property: max-height;
+    transition: ease var(--animtime);
+    max-height: 30rem;
+    height: auto;
+    /* box-shadow: 3px 3px 25px 0px yellow; */
+    /* box-shadow: 0.1rem 0.1rem 3rem 0 rgba(0,0,0,0.5); */
+}
