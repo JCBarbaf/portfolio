@@ -183,16 +183,71 @@ nav a.selected:hover {
     /* background-color: red; */
     width: 50rem;
     margin: 3% 0 2% auto;
-    transition: max-height 0.3s ease-in;
+    max-height: 0;
+    /* transition: max-height 0.3s ease-in; */
+    --animtime: 0.9s;
 }
 #burger-menu.close {
-    max-height: 0;
+    animation: burger-menu-bcwd var(--animtime) ease-in forwards;
 }
 #burger-menu.open {
-    max-height: 450px;
+    animation: burger-menu-fwd var(--animtime) ease-in forwards;
+}
+@keyframes burger-menu-fwd {
+    0% {
+        max-height: 0px;
+    }
+    15%{
+        max-height: 110px;
+    }
+    30%{
+        max-height: 110px;
+    }
+    45%{
+        max-height: 220px;
+    }
+    60%{
+        max-height: 220px;
+    }
+    75%{
+        max-height: 330px;
+    }
+    90%{
+        max-height: 330px;
+    }
+    100%{
+        max-height: 440px;
+    }
+}
+@keyframes burger-menu-bcwd {
+    0% {
+        max-height: 440px;
+    }
+    15%{
+        max-height: 330px;
+    }
+    30%{
+        max-height: 330px;
+    }
+    45%{
+        max-height: 220px;
+    }
+    60%{
+        max-height: 220px;
+    }
+    75%{
+        max-height: 110px;
+    }
+    90%{
+        max-height: 110px;
+    }
+    100%{
+        max-height: 0px;
+    }
 }
 #burger-menu a {
     /* background-color: green; */
+    position: relative;
     display: block;
     width: 50%;
     font-size: 40px;
@@ -201,7 +256,108 @@ nav a.selected:hover {
 #burger-menu a:not(.selected):hover {
     transform: scale(1.05);
 }
-
+#burger-menu.open a {
+    animation: burger-items-fwd var(--animtime) ease-in forwards;
+}
+#burger-menu.close a {
+    animation: burger-items-bcwd var(--animtime) ease-in forwards;
+}
+#burger-menu a:nth-child(1) {
+    z-index: 10;
+    --Y1: -110px;
+    --Y2: 0px;
+    --Y3: 0px;
+    --Y4: 0px;
+    --Y5: 0px;
+    --Y6: 0px;
+    --Y7: 0px;
+    --Y8: 0px;
+}
+#burger-menu a:nth-child(2) {
+    z-index: 9;
+    --Y1: -220px;
+    --Y2: -110px;
+    --Y3: -110px;
+    --Y4: 0px;
+    --Y5: 0px;
+    --Y6: 0px;
+    --Y7: 0px;
+    --Y8: 0px;
+}
+#burger-menu a:nth-child(3) {
+    z-index: 8;
+    --Y1: -330px;
+    --Y2: -220px;
+    --Y3: -220px;
+    --Y4: -110px;
+    --Y5: -110px;
+    --Y6: 0px;
+    --Y7: 0px;
+    --Y8: 0px;
+}
+#burger-menu a:nth-child(4) {
+    z-index: 7;
+    --Y1: -440px;
+    --Y2: -330px;
+    --Y3: -330px;
+    --Y4: -220px;
+    --Y5: -220px;
+    --Y6: -110px;
+    --Y7: -110px;
+    --Y8: 0px;
+}
+@keyframes burger-items-fwd {
+    0% {
+        transform: translateY(var(--Y1));
+    }
+    15%{
+        transform: translateY(var(--Y2));
+    }
+    30%{
+        transform: translateY(var(--Y3));
+    }
+    45%{
+        transform: translateY(var(--Y4));
+    }
+    60%{
+        transform: translateY(var(--Y5));
+    }
+    75%{
+        transform: translateY(var(--Y6));
+    }
+    90%{
+        transform: translateY(var(--Y7));
+    }
+    100%{
+        transform: translateY(var(--Y8));
+    }
+}
+@keyframes burger-items-bcwd {
+    0% {
+        transform: translateY(var(--Y8));
+    }
+    15%{
+        transform: translateY(var(--Y7));
+    }
+    30%{
+        transform: translateY(var(--Y6));
+    }
+    45%{
+        transform: translateY(var(--Y5));
+    }
+    60%{
+        transform: translateY(var(--Y4));
+    }
+    75%{
+        transform: translateY(var(--Y3));
+    }
+    90%{
+        transform: translateY(var(--Y2));
+    }
+    100%{
+        transform: translateY(var(--Y1));
+    }
+}
 
 .arrowback {
     width: 5em;
