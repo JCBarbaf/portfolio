@@ -1,0 +1,14 @@
+.visit-web {
+    display: block;
+    width: 20rem;
+    margin: 3% auto;
+    text-align: center;
+    background-color: var(--blue3);
+    color: var(--lightblue);
+    border-radius: 30rem;
+    font-size: 2rem;
+    padding: 0.3em;
+}
+.visit-web:hover {
+    background-color: var(--blue2);
+}
