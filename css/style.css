@@ -43,10 +43,13 @@ body {
     color: var(--darkerblue);
     padding-bottom: 40px;
 }
-header {
-    /* background-color: red; */
-    position: relative;
-    height: 11vh;
+.cabecera {
+    /* background-color: yellow; */
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 nav {
     /* background-color: yellow; */
@@ -81,9 +84,6 @@ nav a.selected:hover {
     box-shadow: none;
 }
 #logo {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 15%;
     min-width: 10em;
     margin: 1%;
@@ -99,17 +99,107 @@ nav a.selected:hover {
     background-color: var(--blue);
     color: lightblue;
     border-radius: 3rem;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
     padding: 0.5rem 1rem;
     transition: transform ease 0.2s;
 }
 .about-me:hover {
     background-color: var(--blue3);
 }
+#burger-icon {
+    width: 5rem;
+    display: none;
+    --animtime: 0.45s;
+}
+#burger-icon.open path {
+    transform-origin: center;
+    animation: burger-fwd var(--animtime) ease-in-out forwards;
+ }
+ #burger-icon.open path:nth-child(1) {
+    --movX: -16px;
+    --movY1: 23px;
+    --movY2: 16px;
+    --giro: 45deg;
+ }
+ #burger-icon.open path:nth-child(2) {
+    --movX: 0px;
+    --movY1: 0px;
+    --movY2: 0px;
+    --giro: 45deg;
+ }
+ #burger-icon.open path:nth-child(3) {
+    --movX: -20px;
+    --movY1: -23px;
+    --movY2: -16px;
+    --giro: -45deg;
+ }
+ @keyframes burger-fwd {
+    50% {
+       transform: translate(0, var(--movY1));
+    }
+    100% {
+       transform: translate(var(--movX), var(--movY2)) rotate(var(--giro));
+    }
+ }
+ #burger-icon.close path {
+    transform-origin: center;
+    animation: burger-bcwd var(--animtime) ease-in-out forwards;
+ }
+ #burger-icon.close path:nth-child(1) {
+    --movX: -16px;
+    --movY1: 23px;
+    --movY2: 16px;
+    --giro: 45deg;
+ }
+ #burger-icon.close path:nth-child(2) {
+    --movX: 0px;
+    --movY1: 0px;
+    --movY2: 0px;
+    --giro: 45deg;
+ }
+ #burger-icon.close path:nth-child(3) {
+    --movX: -20px;
+    --movY1: -23px;
+    --movY2: -16px;
+    --giro: -45deg;
+ }
+ @keyframes burger-bcwd {
+    0% {
+       transform-origin: center;
+       transform: translate(var(--movX), var(--movY2)) rotate(var(--giro));
+    }
+    50% {
+       transform-origin: center;
+       transform: translate(0, var(--movY1)) rotate(0);
+    }
+    100% {
+       transform-origin: center;
+       transform: translate(0,0) rotate(0);
+    }
+ }
+
+#burger-menu {
+    display: none;
+    overflow: hidden;
+    /* background-color: red; */
+    width: 20rem;
+    margin: 0;
+    margin-left: auto;
+    transition: max-height 0.3s ease-in;
+}
+#burger-menu.close {
+    max-height: 0;
+}
+#burger-menu.open {
+    max-height: 250px;
+}
+#burger-menu a {
+    /* background-color: green; */
+    display: block;
+    width: 90%;
+    margin: 1% auto;
+}
+
+
 .arrowback {
     width: 5em;
     /* rotate: -90deg; */
@@ -237,4 +327,22 @@ footer .iconos svg path {
 }
 #isotipo {
     width: 2rem;
+}
+
+@media (max-width: 1023px) {
+    #logo {
+        width: 20rem;
+    }
+    nav {
+        display: none;
+    }
+    .about-me {
+        display: none;
+    }
+    #burger-icon {
+        display: block;
+    }
+    #burger-menu {
+        display: block;
+    }
 }
