@@ -106,7 +106,7 @@ nav a.selected:hover {
     background-color: var(--blue3);
 }
 #burger-icon {
-    width: 5rem;
+    width: 10rem;
     display: none;
     --animtime: 0.45s;
 }
@@ -181,21 +181,21 @@ nav a.selected:hover {
     display: none;
     overflow: hidden;
     /* background-color: red; */
-    width: 20rem;
-    margin: 0;
-    margin-left: auto;
+    width: 30rem;
+    margin: 3% 0 2% auto;
     transition: max-height 0.3s ease-in;
 }
 #burger-menu.close {
     max-height: 0;
 }
 #burger-menu.open {
-    max-height: 250px;
+    max-height: 450px;
 }
 #burger-menu a {
     /* background-color: green; */
     display: block;
     width: 90%;
+    font-size: 40px;
     margin: 1% auto;
 }
 
@@ -331,7 +331,7 @@ footer .iconos svg path {
 
 @media (max-width: 1023px) {
     #logo {
-        width: 20rem;
+        width: 30rem;
     }
     nav {
         display: none;
