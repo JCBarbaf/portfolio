@@ -92,23 +92,24 @@
     margin-right: 8%;
 }
 .fullscreen .slideshow {
-    width: 96%;
+    width: 100%;
     margin: 0 auto;
     /* background-color: green; */
     /* margin-bottom: auto; */
 }
 .fullscreen .slideshow .fotos {
-    --ancho: 85vw;
+    --ancho: 100vw;
     width: var(--ancho);
     height: calc(var(--ancho)*53/100);
     margin: 0;
 }
 .fullscreen .fotos img {
-    --ancho: 80vw;
+    --ancho: 96vw;
     width: var(--ancho);
     height: calc(var(--ancho)*49/100);
 }
 .fullscreen .slideshow .flecha {
+    display: none;
     width: 2rem;
     margin: 0;
 }
