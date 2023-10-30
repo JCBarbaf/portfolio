@@ -51,6 +51,7 @@ function burger() {
     }
 }
 function ampliar(ampliarlo) {
+    event.stopPropagation();
     container = document.getElementById("fullscreen-container")
     if (ampliarlo && !container.classList.contains("fullscreen")) {
         container.classList.add("fullscreen")
@@ -72,4 +73,7 @@ function ampliarArte(arte) {
         arte.classList.add("fullscreen")
 
     }
+}
+function test() {
+    alert("tontoelquelolea")
 }

@@ -1,4 +1,3 @@
-
 enters = true
 function photoAnim(container) {
     imgs = container.getElementsByTagName("img")
@@ -17,6 +16,7 @@ function photoAnim(container) {
 counter = 1
 animFinished = true
 function slideshow(flecha, avanzar,numImgs) {
+    event.stopPropagation();
     if (animFinished) {
         animFinished = false
         // alert("hola")
