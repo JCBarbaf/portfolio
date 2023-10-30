@@ -464,9 +464,9 @@ footer .iconos svg {
 footer .iconos svg path {
     fill: var(--lightblue);
 }
-#isotipo {
+/* #isotipo {
     width: 2rem;
-}
+} */
 
 @media (max-width: 1023px) {
     #logo {
@@ -483,5 +483,13 @@ footer .iconos svg path {
     }
     #burger-menu {
         display: block;
+    }
+    footer p {
+        width: 70%;
+        padding-right: 4%;
+        font-size: 2rem;
+    }
+    footer .iconos svg {
+        width: 4rem;
     }
 }
