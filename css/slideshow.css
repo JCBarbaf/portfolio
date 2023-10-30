@@ -112,7 +112,7 @@
     --ancho: 70vw;
     /* width: var(--ancho);
     height: calc(var(--ancho)*49/100); */
-    --drop: 80vw;
+    --drop: 85vw;
 }
 .fullscreen .slideshow .flecha {
     position: absolute;
