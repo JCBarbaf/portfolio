@@ -36,14 +36,20 @@
         </header>
         <main>
             <h1><a href="../games.html#ww2" class="arrowback"><img src="../../img/arrow-btn.svg" alt="Go back" title="Go back"></a>Segunda guerra mundial</h1>
-            <div class="slideshow">
-                <img class="flecha" src="../../img/arrow.svg" alt="flecha" onclick="slideshow(this, false,4)">
-                <div class="fotos">
-                    <img src="../../img/logo-carved.png">
-                    <img src="../img/escenas/ww2-01.png" alt="Captura de la escena" title="Captura de la escena">
+            <div id="fullscreen-container">
+                <div class="container">
+                    <div class="close-container"><img class="close" src="../../img/close.svg" alt="cerrar" onclick="ampliar(false)"></div>
+                    <div class="slideshow">
+                        <img class="flecha" src="../../img/arrow.svg" alt="flecha" onclick="slideshow(this, false,4)">
+                        <div class="fotos">
+                            <img src="../../img/logo-carved.png">
+                            <img src="../img/escenas/ww2-01.png" alt="Captura de la escena" title="Captura de la escena" onclick="ampliar(true)">
+                        </div>
+                        <img class="flecha" src="../../img/arrow.svg" alt="flecha" onclick="slideshow(this, true,4)">
+                    </div>
                 </div>
-                <img class="flecha" src="../../img/arrow.svg" alt="flecha" onclick="slideshow(this, true,4)">
             </div>
+            
             <h2>Descripción del proyecto</h2>
             <p class="project-desc">Esta escena, creada en unreal engine 4, muestra un puesto de avanzada en un día nevado durante la segunda guerra mundial. Salvo algunos de los modelos 3D, todo ha sido creado desde cero. Esto incluye: modelos, texturas, montaje de la escena, iluminación y efectos visuales. </p>
             <h2>Herramientas usadas para el proyecto</h2>
