@@ -44,7 +44,7 @@
     margin: auto;
     border-radius: 4vw;
     border: 0.5rem solid var(--blue2);
-    --drop: 50vw;
+    --drop: 60vw;
 }
 .slide-left {
     --rotation: 30deg;
