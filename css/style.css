@@ -41,7 +41,7 @@ body {
     background-repeat: no-repeat;
     font-family: 'Poppins', Arial, "Helvetica Neue", Helvetica, sans-serif;
     color: var(--darkerblue);
-    padding-bottom: 2vw;
+    padding-bottom: 10vw;
 }
 .cabecera {
     /* background-color: yellow; */
