@@ -3,6 +3,7 @@ animcounter=0;
 canmove = true;
 burgerIcon = document.getElementById("burger-icon")
 burgerMenu = document.getElementById("burger-menu")
+ampliado = false;
 function goTo(url) {
     window.location = url;
 }
@@ -49,6 +50,11 @@ function burger() {
         burgerMenu.classList.add("open")
     }
 }
-function ampliar(params) {
-    
+function ampliar(ampliarlo) {
+    container = document.getElementById("fullscreen-container")
+    if (ampliarlo && !container.classList.contains("fullscreen")) {
+        container.classList.add("fullscreen")
+    } else if (!ampliarlo && container.classList.contains("fullscreen")) {
+        container.classList.remove("fullscreen")
+    }
 }

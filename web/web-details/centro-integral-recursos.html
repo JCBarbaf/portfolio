@@ -37,13 +37,18 @@
         </header>
         <main>
             <h1><a href="../web.html#cir" class="arrowback"><img src="../../img/arrow-btn.svg" alt="Go back" title="Go back"></a>Centro integral de recursos de PalmaActiva</h1>
-            <div class="slideshow">
-                <img class="flecha" src="../../img/arrow.svg" alt="flecha" onclick="slideshow(this, false,3)">
-                <div class="fotos">
-                    <img src="../../img/logo-carved.png">
-                    <img src="../img/cir-captura-01.png" alt="Captura de la escena" title="Captura de la web">
+            <div id="fullscreen-container">
+                <div class="container">
+                    <div class="close-container"><img class="close" src="../../img/close.svg" alt="cerrar" onclick="ampliar(false)"></div>
+                    <div class="slideshow">
+                        <img class="flecha" src="../../img/arrow.svg" alt="flecha" onclick="slideshow(this, false,3)">
+                        <div class="fotos">
+                            <img src="../../img/logo-carved.png">
+                            <img src="../img/cir-captura-01.png" alt="Captura de la escena" title="Captura de la web" onclick="ampliar(true)">
+                        </div>
+                        <img class="flecha" src="../../img/arrow.svg" alt="flecha" onclick="slideshow(this, true,3)">
+                    </div>
                 </div>
-                <img class="flecha" src="../../img/arrow.svg" alt="flecha" onclick="slideshow(this, true,3)">
             </div>
             <!-- <a href="" class="visit-web">Visita la página</a> -->
             <h2>Descripción del proyecto</h2>
