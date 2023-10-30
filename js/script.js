@@ -49,3 +49,6 @@ function burger() {
         burgerMenu.classList.add("open")
     }
 }
+function ampliar(params) {
+    
+}
