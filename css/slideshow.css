@@ -23,6 +23,7 @@
     transform: rotate(180deg) scale(1.3);
 }
 .slideshow .fotos {
+    cursor: pointer;
     position: relative;
     overflow: hidden;
     --ancho: 70vw;
@@ -101,7 +102,8 @@
     /* margin-bottom: auto; */
 }
 .fullscreen .slideshow .fotos {
-    --ancho: 75vw;
+    cursor: default;
+    --ancho: 72vw;
     /* width: var(--ancho);
     height: calc(var(--ancho)*53/100); */
     margin: 0;
