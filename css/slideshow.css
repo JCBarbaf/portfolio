@@ -137,4 +137,7 @@
     .fullscreen .fotos img {
         --ancho: 96vw;
     }
+    .close {
+        width: 4rem;
+    }
 }
