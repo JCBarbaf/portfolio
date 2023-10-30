@@ -58,3 +58,18 @@ function ampliar(ampliarlo) {
         container.classList.remove("fullscreen")
     }
 }
+function ampliarArte(arte) {
+    imgs = document.querySelectorAll(".galeria img")
+    if (arte.classList.contains("fullscreen")) {
+        for (let i = 0; i < imgs.length; i++) {
+            imgs[i].classList.remove("fullscreen")
+        }
+        
+    } else {
+        for (let i = 0; i < imgs.length; i++) {
+            imgs[i].classList.remove("fullscreen")
+        }
+        arte.classList.add("fullscreen")
+
+    }
+}
