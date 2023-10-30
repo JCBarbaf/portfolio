@@ -37,13 +37,18 @@
         </header>
         <main>
             <h1><a href="../web.html#horse" class="arrowback"><img src="../../img/arrow-btn.svg" alt="Go back" title="Go back"></a>Carrera de caballos</h1>
-            <div class="slideshow">
-                <img class="flecha" src="../../img/arrow.svg" alt="flecha" onclick="slideshow(this, false,2)">
-                <div class="fotos">
-                    <img src="../../img/logo-carved.png">
-                    <img src="../img/horse-captura-01.png" alt="Captura de la escena" title="Captura de la web">
+            <div id="fullscreen-container">
+                <div class="container">
+                    <div class="close-container"><img class="close" src="../../img/close.svg" alt="cerrar" onclick="ampliar(false)"></div>
+                    <div class="slideshow">
+                        <img class="flecha" src="../../img/arrow.svg" alt="flecha" onclick="slideshow(this, false,2)">
+                        <div class="fotos">
+                            <img src="../../img/logo-carved.png">
+                            <img src="../img/horse-captura-01.png" alt="Captura de la escena" title="Captura de la web" onclick="ampliar(true)">
+                        </div>
+                        <img class="flecha" src="../../img/arrow.svg" alt="flecha" onclick="slideshow(this, true,2)">
+                    </div>
                 </div>
-                <img class="flecha" src="../../img/arrow.svg" alt="flecha" onclick="slideshow(this, true,2)">
             </div>
             <a href="https://jcbarbaf-horse-race.vercel.app/" class="visit-web" target="_blank">Visita la página</a>
             <h2>Descripción del proyecto</h2>
