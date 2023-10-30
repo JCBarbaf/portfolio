@@ -1,3 +1,37 @@
+h1 {
+    /* background-color: red; */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-width: 55rem;
+    margin: 3% 0;
+}
+.arrowback {
+    width: 1.5em;
+    /* rotate: -90deg; */
+    /* transform: rotate(-90deg); */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 4rem;
+    margin: auto 0;
+}
+.arrowback img {
+    width: 100%;
+}
+.arrowback:hover img {
+    animation: spin 0.4s ease-out forwards;
+}
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
 .detalles {
     background-color: var(--lighterblue);
     /* background-color: red; */
@@ -128,6 +162,9 @@ iframe {
     border: 0.5rem solid var(--blue2);
 }
 @media (max-width: 1800px) {
+    .arrowback {
+        left: 0;
+    }
     .detalles {
         justify-content: center;
         align-items: stretch;

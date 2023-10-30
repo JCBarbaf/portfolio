@@ -358,29 +358,6 @@ nav a.selected:hover {
         transform: translateY(var(--Y1));
     }
 }
-
-.arrowback {
-    width: 5em;
-    /* rotate: -90deg; */
-    /* transform: rotate(-90deg); */
-    position: absolute;
-    top: 7rem;
-    left: 3rem;
-}
-.arrowback img {
-    width: 100%;
-}
-.arrowback:hover img {
-    animation: spin 0.4s ease-out forwards;
-}
-@keyframes spin {
-    from{
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(-360deg);
-    }
-}
 h1 {
     color: var(--blue2);
     font-size: 3rem;
@@ -466,7 +443,7 @@ footer {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
 }
 footer p {
     color: var(--lightblue);
@@ -477,9 +454,12 @@ footer .iconos {
     justify-content: flex-end;
     align-items: center;
     width: 7rem;
+    height: 100%;
 }
 footer .iconos svg {
+    display: block;
     width: 2rem;
+    /* background-color: blue; */
 }
 footer .iconos svg path {
     fill: var(--lightblue);
