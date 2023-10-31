@@ -1,26 +1,19 @@
 scrollmovement = 20;
 animcounter=0;
 canmove = true;
-burgerIcon = document.getElementById("burger-icon")
-burgerMenu = document.getElementById("burger-menu")
-ampliado = false;
+// ir a una url
 function goTo(url) {
     window.location = url;
 }
+// scroll en la barra de herramientas
 function scrollSlider(arrow, direction) {
-    // alert("hola")
     slider = arrow.parentNode.getElementsByClassName("slider");
     if (canmove) {
         canmove = false;
         animscroll = setInterval(scrollAnim, 10, slider[0], direction);
     }
-    // if (direction=="right") {
-    //     slider[0].scrollLeft += scrollmovement
-        
-    // } else if (direction=="left") {
-    //     slider[0].scrollLeft -= scrollmovement
-    // }
 }
+// animacion del scroll para las herramientas
 function scrollAnim(slider, direction) {
     if (animcounter<scrollmovement) {
         if (direction=="right") {
@@ -33,11 +26,12 @@ function scrollAnim(slider, direction) {
         animcounter=0;
         clearInterval(animscroll);
         canmove = true;
-        // alert("hola")
     }
 }
+// menu burger
+burgerIcon = document.getElementById("burger-icon");
+burgerMenu = document.getElementById("burger-menu");
 function burger() {
-    // alert(burgerIcon)
     if (burgerIcon.classList.contains("open")) {
         burgerIcon.classList.remove("open")
         burgerMenu.classList.remove("open")
@@ -50,6 +44,7 @@ function burger() {
         burgerMenu.classList.add("open")
     }
 }
+// Ampliar imagen detalle
 function ampliar(ampliarlo) {
     event.stopPropagation();
     container = document.getElementById("fullscreen-container")
@@ -59,6 +54,7 @@ function ampliar(ampliarlo) {
         container.classList.remove("fullscreen")
     }
 }
+// Ampliar imagen arte
 function ampliarArte(arte) {
     imgs = document.querySelectorAll(".galeria img")
     if (arte.classList.contains("fullscreen")) {
@@ -73,7 +69,4 @@ function ampliarArte(arte) {
         arte.classList.add("fullscreen")
 
     }
-}
-function test() {
-    alert("tontoelquelolea")
 }
