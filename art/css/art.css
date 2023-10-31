@@ -24,7 +24,6 @@
     transform: scale(var(--escalado));
 }
 .buy-my-art {
-    /* background-color: red; */
     width: 90%;
     margin: 2% auto;
     font-size: 2rem;

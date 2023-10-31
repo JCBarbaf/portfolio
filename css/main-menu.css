@@ -28,11 +28,9 @@ a.expand p {
     border-radius: 1rem;
     border: 0.3rem solid var(--blue2);
     transition: border-radius ease var(--animtime);
-    /* box-shadow: 0.1rem 0.1rem 3rem 0 rgba(0,0,0,0.5); */
 }
 a.expand:hover p {
     border-radius: 1rem 1rem 0.5rem 0.5rem;
-    /* border-radius: 0; */
     transition: border-radius ease var(--animtime);
 }
 a.expand img {
@@ -52,8 +50,6 @@ a.expand:hover img {
     transition: ease var(--animtime);
     max-height: 30rem;
     height: auto;
-    /* box-shadow: 3px 3px 25px 0px yellow; */
-    /* box-shadow: 0.1rem 0.1rem 3rem 0 rgba(0,0,0,0.5); */
 }
 @media (max-width: 1023px) {
     .about-me {

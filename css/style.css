@@ -13,7 +13,6 @@
     margin: 0;
     padding: 0;
     color: var(--darkerblue);
-    /* box-sizing: border-box; */
 }
 h1,h2,h3,h4,h5,h6 {
     text-align: center;
@@ -44,7 +43,6 @@ body {
     padding-bottom: 4vw;
 }
 .cabecera {
-    /* background-color: yellow; */
     width: 100%;
     display: flex;
     flex-flow: row wrap;
@@ -52,7 +50,6 @@ body {
     align-items: center;
 }
 nav {
-    /* background-color: yellow; */
     height: 100%;
     display: flex;
     flex-flow: row wrap;
@@ -61,7 +58,6 @@ nav {
 }
 nav a {
     width: 10rem;
-    /* min-width: fit-content; */
     color: var(--lightblue);
     background-color: var(--blue);
     margin: 0 0.3em;
@@ -180,11 +176,9 @@ nav a.selected:hover {
 #burger-menu {
     display: none;
     overflow: hidden;
-    /* background-color: red; */
     width: 50rem;
     margin: 3% 0 2% auto;
     max-height: 0;
-    /* transition: max-height 0.3s ease-in; */
     --animtime: 0.9s;
 }
 #burger-menu.close {
@@ -246,7 +240,6 @@ nav a.selected:hover {
     }
 }
 #burger-menu a {
-    /* background-color: green; */
     position: relative;
     display: block;
     width: 50%;
@@ -366,7 +359,6 @@ h1 {
     font-size: 2.5rem;
 }
 .tools {
-    /* background-color: green; */
     margin: 1% auto;
     width: 92%;
     display: flex;
@@ -377,7 +369,6 @@ h1 {
 .tools>img {
     display: block;
     width: 30px;
-    /* background-color: yellow; */
     margin: 1%;
 }
 .invert {
@@ -392,10 +383,8 @@ h1 {
     translate: -0.5rem 0;
 }
 .slider {
-    /* background-color: red; */
     width: 87.3%;
     height: 10rem;
-    /* margin: 0 auto; */
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
@@ -421,9 +410,6 @@ h1 {
     25% {
         transform: rotate(20deg);
     }
-    50% {
-        /* transform: rotate(20deg); */
-    }
     75% {
         transform: rotate(-20deg);
     }
@@ -432,7 +418,6 @@ h1 {
     }
 }
 .arrow-top {
-    /* background-color: red; */
     z-index: 200;
     position: fixed;
     bottom: 5rem;
@@ -475,9 +460,7 @@ h1 {
 }
 footer {
     background-color: var(--darkblue);
-    /* margin: -2%; */
     padding: 0.5rem 3rem;
-    /* width: 100%; */
     position: fixed;
     bottom: 0;
     left: 0;
@@ -491,7 +474,6 @@ footer p {
     color: var(--lightblue);
 }
 footer .iconos {
-    /* background-color: yellow; */
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -501,14 +483,10 @@ footer .iconos {
 footer .iconos svg {
     display: block;
     width: 2rem;
-    /* background-color: blue; */
 }
 footer .iconos svg path {
     fill: var(--lightblue);
 }
-/* #isotipo {
-    width: 2rem;
-} */
 
 @media (max-width: 1023px) {
     body {
