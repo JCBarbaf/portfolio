@@ -46,7 +46,7 @@ function changeSrc(img, avanzar,numImgs) {
             counter = numImgs;
         }
     }
-    img.src = img.src.slice(0,-6) + counter.toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping: false}) + ".png";
+    img.src = img.src.slice(0,-7) + counter.toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping: false}) + ".webp";
 }
 // quitar la clase cuando la animación termine
 function removeClass(elem,clase) {
