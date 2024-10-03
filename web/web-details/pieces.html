@@ -5,7 +5,7 @@
         <meta name="author" content="Juan Carlos Barba Fernández">
         <meta name="description" content="Official site of the web developer Juan Carlos Barba Fernández.">
         <meta name="keywords" content="web desing, cv, curriculum, gamedev, studio, juan carlos barba">
-		<title>Choose your starter</title>
+		<title>Pieces!</title>
         <link rel="stylesheet" href="../../css/style.css">
         <link rel="stylesheet" href="../../css/proyect-details.css">
         <link rel="stylesheet" href="../../css/slideshow.css">
@@ -36,7 +36,7 @@
             </nav>
         </header>
         <main>
-            <h1><a href="../web.html#starter" class="arrowback"><img src="../../img/arrow-btn.svg" alt="Go back" title="Go back"></a>Choose your starter</h1>
+            <h1><a href="../web.html#pieces" data-returnid="pieces" class="arrowback" onclick="ChangeReturnURL(event, this)"><img src="../../img/arrow-btn.svg" alt="Go back" title="Go back"></a>Pieces!</h1>
             <div id="fullscreen-container" onclick="ampliar(false)">
                 <div class="container">
                     <div class="close-container"><img class="close" src="../../img/close.svg" alt="cerrar" onclick="ampliar(false)"></div>
@@ -44,21 +44,20 @@
                         <img class="flecha" src="../../img/arrow.svg" alt="flecha" onclick="slideshow(this, false,5)">
                         <div class="fotos">
                             <img src="../../img/logo-carved.webp">
-                            <img src="../img/starter-captura-01.webp" alt="Captura de la escena" title="Captura de la web" onclick="ampliar(true)">
+                            <img src="../img/pieces-captura-01.webp" alt="Captura de la escena" title="Captura de la web" onclick="ampliar(true)">
                         </div>
                         <img class="flecha" src="../../img/arrow.svg" alt="flecha" onclick="slideshow(this, true,5)">
                     </div>
                 </div>
             </div>
-            <a href="https://choose-starter.vercel.app/" target="_blank" class="visit-web">Visita la página</a>
+            <a href="https://pieces-kappa.vercel.app/" class="visit-web" target="_blank">Visita la página</a>
             <h2>Descripción del proyecto</h2>
-            <p class="project-desc">Web donde se pueden elegir entre diferentes pokémon iniciales creada usando webcomponents. Los pokémon a elegir aparecen de forma aleatoria entre una lista prefijada.</p>
+            <p class="project-desc">Juego web de puzzles donde tendrás que colocar las piezas dentro de una cuadrilla predetermianda. Los puzzles y miniaturas se generan automaticamente a partir de de un json que hace de base de datos. La web también incluye una página de administrador donde diseñar tus propios niveles.</p>
             <h2>Herramientas usadas para el proyecto</h2>
             <div class="tools">
                 <div class="slider">
-                  <img src="../../img/herramientas/ico_webcomponents.webp" alt="webcomponents" title="Webcomponents">
+                  <img src="../../img/herramientas/ico_sass.webp" alt="sass" title="Sass">
                     <img src="../../img/herramientas/ico_html.webp" alt="html" title="HTML5">
-                    <img src="../../img/herramientas/ico_css.webp" alt="css" title="CSS3">
                     <img src="../../img/herramientas/ico_js.webp" alt="js" title="Javascript">
                     <img src="../../img/herramientas/ico_figma.webp" alt="figma" title="Figma">
                     <img src="../../img/herramientas/ico_vscode.webp" alt="vscode" title="Visual studio code">

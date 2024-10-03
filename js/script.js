@@ -70,3 +70,10 @@ function ampliarArte(arte) {
 
     }
 }
+// Cambiar URL de volver
+function ChangeReturnURL(event, returnButton) {
+    event.preventDefault()
+    const urlSearchParams = new URLSearchParams(window.location.search);
+    const params = Object.fromEntries(urlSearchParams.entries());
+    window.location = `../../${params.return}/${params.return}.html#${returnButton.dataset.returnid}`
+}
